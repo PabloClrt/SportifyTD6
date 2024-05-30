@@ -1,0 +1,336 @@
+/* Styles généraux */
+header {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    padding-top: 2px; /* Ajout d'un espace en haut */
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between; /* Aligner le titre et le logo sur les côtés */
+    margin-bottom: 10px; /* Espace en bas du titre */
+	align-items: center; /* Alignement vertical des éléments */
+}
+
+.title {
+    color: #fff; /* Texte blanc */
+    font-size: 50px; /* Taille du texte agrandie */
+	margin-left : 150px; /* Centrage horizontal */
+}
+
+.highlight {
+    color: #f00; /* Texte rouge pour le mot "Sportify" */
+}
+
+.logo {
+    width: 150px; /* Largeur fixe du logo */
+    height: 60px; /* Hauteur fixe du logo */
+	margin-right: 40px; /* Déplacer le logo de 25 pixels vers la gauche */
+	margin-top: 20px; /* Déplacer le logo de 25 pixels vers la gauche */
+}
+
+
+
+.header-nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    text-transform: uppercase;
+    justify-content: flex-start ; /* Aligner les boutons à droite */
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.header-nav ul li {
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.header-nav ul li {
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  margin-right: 10px; /* Ajout d'une marge à droite */
+}
+
+/* Styles pour le bouton "Votre compte" */
+.header-nav ul li.compte-button {
+  background-color: #f00; /* Changement de couleur de fond en rouge */
+  border: 2px solid #f00; /* Changement de couleur de bordure en rouge */
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+.header-nav ul li:last-child {
+  background-color: #f00;
+  border: 2px solid #f00;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+.header-nav ul li:last-child:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.header-nav ul li.compte-button:hover a {
+  background-color: transparent;
+  color: #f00; /* Change la couleur du texte en rouge au survol */
+}
+
+.header-nav ul li a {
+  color: #fff; /* Texte blanc */
+}
+
+.header-nav ul li a:hover {
+  color: #f00; /* Assurez-vous que le texte devient rouge au survol */
+}
+
+.header-nav ul li a:after {
+  background-color: #f00;
+  content: "";
+  position: absolute;
+  width: 90%;
+  left: -100%;
+  height: 3px;
+  border-radius: 30px;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.header-nav ul li a:hover:after {
+  left: 5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #000; /* Fond noir pour le body */
+    color: #000; /* Texte blanc pour le body */
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.9;
+}
+
+
+
+.welcome-text {
+    background-color: #fff; /* Fond blanc */
+    color: #000; /* Texte noir */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.welcome-text h2 {
+    font-size: 28px; /* Taille de la police du titre */
+    font-weight: bold; /* Graisse de la police du titre */
+}
+
+.welcome-text p {
+    font-size: 18px; /* Taille de la police du texte */
+    line-height: 1.5; /* Hauteur de ligne */
+	display: inline; /* Afficher les paragraphes en ligne */
+
+}
+
+
+.events-container {
+    background-color: #fff; /* Fond blanc pour le conteneur des événements */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.events-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event-image {
+    display: flex; /* Afficher les images côte à côte */
+    margin-bottom: 20px; /* Espacement entre les images */
+    align-items: center; /* Centrer verticalement les éléments */
+}
+
+.event-image img {
+    width: 200px; /* Ajuster la largeur des images selon votre besoin */
+    border-radius: 10px; /* Coins arrondis pour les images */
+}
+
+.event-image p {
+    color: #000; /* Texte noir pour les légendes */
+    font-size: 16px; /* Taille de police des légendes */
+	margin-right: 400px; /* Espacement entre les images */
+
+}
+
+.events-container {
+    background-color: #fff; /* Fond blanc pour le conteneur des événements */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+.carousel-container {
+    text-align: center;
+	background-color: #fff; /* Fond blanc */
+    color: #000; /* Texte noir */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+	
+	position: relative; /* Position relative pour positionner les flèches */
+    overflow: hidden;
+}
+
+.carousel-container h2 {
+    color: #000; /* Titre en noir */
+    font-size: 28px; /* Taille du titre */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.carousel-slide {
+    display: none; /* Cacher toutes les slides */
+}
+
+.carousel-slide img {
+    width: 40%; /* Ajuster la largeur des images à 80% du conteneur */
+    max-width: 500px; /* Limiter la largeur maximale des images */
+    border-radius: 20px;
+}
+
+.carousel-slide p {
+    color: #000; /* Texte noir pour les légendes */
+    font-size: 16px; /* Taille de police des légendes */
+    margin-top: 10px; /* Espacement entre les images et les légendes */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #f00; /* Flèches rouges */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Positionne les flèches verticalement au centre */
+    width: auto;
+    padding: 16px;
+    margin-top: -22px; /* Ajuste la position verticale pour centrer les flèches */
+    color: #f00; /* Flèches rouges */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateY(-50%); /* Centre les flèches verticalement */
+}
+
+.prev {
+    left: 300px; /* Décale la flèche de gauche vers la gauche */
+    border-radius: 3px 0 0 3px; /* Coins arrondis pour la flèche gauche */
+}
+
+.next {
+    right: 300px; /* Décale la flèche de droite vers la droite */
+    border-radius: 0 3px 3px 0; /* Coins arrondis pour la flèche droite */
+}
+
+
+
+
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+	margin-right: 20px;
+}
+
+.contact-info h3 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: white; /* Changer la couleur du texte en blanc */
+}
+
+.map {
+    flex-grow: 1; /* Pour que la carte occupe tout l'espace restant */
+    margin-left: 20px; /* Pour l'espace entre les coordonnées et la carte */
+    text-align: right; /* Pour aligner la carte à droite */
+}
+
+.map iframe {
+    width: 500px; /* Largeur désirée de la carte */
+    height: 300px; /* Hauteur désirée de la carte */
+}
