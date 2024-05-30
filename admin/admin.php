@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-// if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
-//     header('Location: login.php');
-//     exit();
-// }
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+    header('Location: /Sportify/users/login.php');
+    exit();
+}
 
 $dsn = 'mysql:host=localhost;dbname=sportify';
 $username = 'root'; // Modifier avec votre nom d'utilisateur MySQL
@@ -13,7 +13,7 @@ $db = new PDO($dsn, $username, $password);
 
 // Recherche de tous les coaches
 $stmt = $db->query("
-    SELECT c.coach_id, CONCAT(u.first_name, ' ', u.last_name) AS coach_name, u.email
+    SELECT c.coach_id, CONCAT(u.first_name, ' ', u.last_name) AS coach_name, c.specialty AS specialty, u.email
     FROM coaches c
     JOIN users u ON c.user_id = u.user_id
 ");
@@ -64,6 +64,7 @@ if (isset($_GET['search'])) {
 <body>
     <h1>Administration</h1>
     <a href="create_coach.php">Créer un nouveau coach</a>
+    <a href="create_gym.php">Créer une salle de sport</a>
     <form action="admin.php" method="GET">
         <input type="text" name="search" placeholder="Rechercher un coach...">
         <button type="submit">Rechercher</button>
