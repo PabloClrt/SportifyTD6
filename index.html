@@ -1,0 +1,99 @@
+   <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;900&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sport.css">
+</head>
+<body>
+  <header class="header">
+  
+    <div class="title-container">
+        <h1 class="title"><span class="highlight">Sportify : </span> Consultation Sportive</h1>
+        <div class="logo-content">
+            <img class="logo" src="logo2.png" alt="Logo Sportify">
+        </div>
+    </div>
+	
+
+	
+    <nav class="header-nav container">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#tout-parcourir">Tout Parcourir</a></li>
+            <li><a href="#recherche">Recherche</a></li>
+            <li><a href="#rendez-vous">Rendez-vous</a></li>
+            <li><a href="#votre-compte">Votre Compte</a></li>
+        </ul>
+    </nav>
+</header>
+	
+	<body>
+	<div class="welcome-text">
+    <h2>Bienvenue sur Sportify</h2>
+    <p>Sportify est une plateforme en ligne innovante qui vous permet de trouver et de gérer des rendez-vous sportifs avec des coachs professionnels.</p>
+    <p>Que vous soyez à la recherche d'un entraîneur personnel, d'un nutritionniste, d'un physiothérapeute ou d'un autre spécialiste, Sportify vous offre un accès facile à une liste complète de professionnels du sport.</p>
+    <p>Explorez notre site pour découvrir les profils détaillés de chaque spécialiste, leurs disponibilités, et réservez facilement un rendez-vous qui vous convient.</p>
+    <p>Nous sommes là pour vous aider à atteindre vos objectifs sportifs et à maintenir un mode de vie sain et actif.</p>
+	</div>
+	
+	
+	<div class="events-container">
+        <h2>Événements de la semaine</h2>
+		
+        <div class="event-image">
+    <div class="event-image">
+        <img src="IMG1.png" alt="Image 1">
+        <p>Légende pour Image 1</p>
+    </div>
+    <div class="event-image">
+        <img src="IMG2.png" alt="Image 2">
+        <p>Légende pour Image 2</p>
+			</div>
+		</div>
+    </div>
+	
+	<div class="carousel-container">
+        <h2>Les coachs</h2>
+        <div class="carousel">
+            <div class="carousel-slide">
+            <img src="IMG1.png" alt="Image 1" class="carousel-image">
+                <p>Légende pour Image 1</p>
+            </div>
+            <div class="carousel-slide">
+            <img src="IMG2.png" alt="Image 2" class="carousel-image">
+                <p>Légende pour Image 2</p>
+            </div>
+            <div class="carousel-slide">
+            <img src="IMG3.png" alt="Image 3" class="carousel-image">
+                <p>Légende pour Image 3</p>
+            </div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+	
+
+    <script src="script.js"></script>
+	
+
+</body>
+
+  
+  <footer class="footer">
+    <div class="contact-info">
+        <h3>Contactez-nous</h3>
+        <p>Email: <a href="mailto:contact@sportify.com" style="color: red;">contact.sportify@gmail.com</a></p>
+        <p>Téléphone: <span style="color: red;">+33 123 456 789</span></p>
+        <p>Adresse: <span style="color: red;">10 Rue Sextius Michel, 75015 Paris</span></p>
+    </div>
+    <div class="map">
+        <!-- Intégration de la carte Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.732219247867!2d2.285990976128141!3d48.85122870121092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701b4f58251b%3A0x167f5a60fb94aa76!2sECE%20-%20Ecole%20d&#39;ing%C3%A9nieurs%20-%20Campus%20de%20Paris!5e0!3m2!1sfr!2sfr!4v1717059891597!5m2!1sfr!2sfr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+		
+</footer>
+  
+</html>
